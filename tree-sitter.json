@@ -1,0 +1,42 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "weave",
+      "camelcase": "Weave",
+      "title": "weave",
+      "scope": "source.wev",
+      "file-types": [
+        "weave"
+      ],
+      "injection-regex": "^weave$",
+      "class-name": "TreeSitterWeave"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "some weird assembler thing",
+    "authors": [
+      {
+        "name": "Duckonaut",
+        "email": "duckonaut@gmail.com",
+        "url": "https://duckonaut.dev"
+      }
+    ],
+    "links": {
+      "repository": "https://git.duckonaut.dev/tree-sitter-weave",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": true,
+    "go": true,
+    "java": false,
+    "node": true,
+    "python": true,
+    "rust": true,
+    "swift": true,
+    "zig": false
+  }
+}
